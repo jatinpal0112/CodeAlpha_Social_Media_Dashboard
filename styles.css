@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+#header2{
+    display: none;
+}
+@media (max-width:768px) {
+    #header1{
+        display: none;
+    }
+    #header2{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+}
+@media (max-width:450px) {
+    #header2{
+        display: flex;
+        justify-content: space-between
+    }
+}
+main{
+    padding: 0 5rem 0 5rem;
+}
+#mainHeading{
+    font-size: 1.5rem;
+}
+#headingPara{
+    font-weight: bold;
+    color: #63687E;
+}
+.mainContent{
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: repeat(auto-fit,MinMax(295px,296px));
+    place-content: center;
+    padding-bottom: 1rem;
+}
+#mainContent2{
+    padding-top: 1rem;
+}
+.mainCards{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F2FA;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: all 0.1s linear 0s;
+}
+#cardContent1{
+    display: flex;
+    gap: 0.5rem;
+}
+#cardContent4{
+    display: flex;
+    gap: 0.5rem;
+}
+.cardContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cardContent1Img{
+    text-decoration: none;
+    height: 1.8rem;
+}
+#cardContent1Para{
+    color: #63687E;
+}
+#cardContent2Para{
+    font-size: 3.25rem;
+    font-weight: bold;
+    text-rendering: optimizeSpeed;
+}
+#cardContent3Para{
+    color: #63687E;
+    letter-spacing: 0.3rem;
+}
+#cardContent4Img{
+    text-decoration: none;
+    height: 1.8rem;
+}
+#mainCard1{
+    border-top: 0.3rem solid #316ffc;
+    border-radius: 5px;
+}
+#mainCard2{
+    border-top: 0.3rem solid #1DA1F2;;
+    border-radius: 5px;
+}
+#mainCard3{
+    border-top: 0.3rem solid #ee2a7b;;
+    border-radius: 5px;
+}
+#mainCard4{
+    border-top: 0.3rem solid #0A66C2;;
+    border-radius: 5px;
+}
+.mainCards:hover{
+    background-color: gainsboro;
+}
+footer{
+    text-align: center;
+}
